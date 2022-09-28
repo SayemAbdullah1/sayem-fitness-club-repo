@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Activity from '../Activity/Activity';
 import ExerciseCard from '../ExerciseCard/ExerciseCard';
 import './Exercise.css'
 
@@ -23,7 +24,7 @@ const Exercise = () => {
                 }
             </div>
             <div className='activity'>
-                <h3>activity</h3>
+                <Activity></Activity>
             </div>
         </div>
     );

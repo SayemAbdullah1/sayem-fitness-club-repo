@@ -2,9 +2,29 @@
     border: 1px solid gray;
     width: 360px;
     margin-bottom: 30px;
+    border-radius: 20px 20px 0px 0px;
+    
 }
 .exercise-card img{
-    width: 346px;
-    border-radius: 20px;
+    width: 360px;
+    border-radius: 20px 20px 0px 0px;
     height: 200px;
+    /* padding: 8px; */
+}
+.details{
+    color: rgb(142, 139, 139);
+}
+.cart-info{
+    padding: 10px;
+}
+.add-btn{
+    height: 40px;
+    border: none;
+    width: 100%;
+    background-color: rgb(184, 179, 179);
+    font-size: 15px;
+    font-weight: 500;
+}
+.add-btn:hover{
+    background-color: rgb(240, 154, 154);
 }
