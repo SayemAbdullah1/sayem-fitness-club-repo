@@ -1,0 +1,10 @@
+.exercise-card{
+    border: 1px solid gray;
+    width: 360px;
+    margin-bottom: 30px;
+}
+.exercise-card img{
+    width: 346px;
+    border-radius: 20px;
+    height: 200px;
+}

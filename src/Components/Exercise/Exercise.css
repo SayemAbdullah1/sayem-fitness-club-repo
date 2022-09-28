@@ -1,0 +1,17 @@
+.exercise-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    padding: 0px 40px;
+}
+.exercise{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.activity{
+    /* border: 1px solid gray; */
+    background-color: rgb(226, 131, 131);
+    position: sticky;
+    top: 0;
+
+}
