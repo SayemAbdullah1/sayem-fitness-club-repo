@@ -55,3 +55,25 @@
     padding: 12px;
     border-radius: 30px;
 }
+.break button:hover{
+    background-color: pink;
+}
+.exercise-brk-time{
+    background-color: white;
+    padding: 1px 10px;
+    margin-top: 15px;
+    /* display: inline; */
+    border-radius: 10px;
+}
+.btn-act{
+    padding: 10px;
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgb(245, 172, 184);
+    border: none;
+    border-radius: 10px;
+
+}
+.btn-act:hover{
+    background-color: white;
+}

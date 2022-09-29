@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
+import Blog from '../Blog/Blog';
 import ExerciseCard from '../ExerciseCard/ExerciseCard';
 import './Exercise.css'
 
@@ -15,6 +16,7 @@ const Exercise = () => {
 
     return (
         <div className='exercise-container'>
+            <div>
             <div className='exercise'>
                 {
                     exercises.map(exercise => <ExerciseCard
@@ -23,6 +25,9 @@ const Exercise = () => {
                     ></ExerciseCard>)
                 }
             </div>
+                <Blog></Blog>
+            </div>
+            
             <div className='activity'>
                 <Activity></Activity>
             </div>

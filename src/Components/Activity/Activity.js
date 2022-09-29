@@ -45,7 +45,21 @@ const Activity = () => {
             </div>
         </div>
 
+        {/* exercise details  */}
+
+        <div>
+            <h3>Exercise details</h3>
+                <div className='exercise-brk-time'>
+                    <p>Exercise time <span>00</span></p> 
+            </div>
+                <div className='exercise-brk-time'>
+                    <p>Break time <span>00</span></p>
+            </div>
         </div>
+
+        <button className='btn-act'>Activity completed</button>
+        </div>
+        
 
 
     );
