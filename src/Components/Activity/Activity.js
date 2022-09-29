@@ -1,5 +1,7 @@
 import React from 'react';
 import './Activity.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Activity = ({time}) => {
     // console.log(time)
@@ -9,6 +11,11 @@ const Activity = ({time}) => {
         totalTimes = totalTimes + addTime.time;
         // console.log(totalTimes)
     }
+
+    const difToast = () =>{
+        toast("Thank you!")
+    }
+
 
     return (
             // activity infooo......................................
@@ -65,8 +72,10 @@ const Activity = ({time}) => {
                     <p>Break time <span>s</span></p>
             </div>
         </div>
-
-        <button className='btn-act'>Activity completed</button>
+            <button className='btn-act' onClick={difToast}>Activity completed</button>
+        <ToastContainer/>
+            
+            
         </div>
         
 
