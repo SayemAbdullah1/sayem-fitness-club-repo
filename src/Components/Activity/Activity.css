@@ -17,3 +17,41 @@
         padding: 20px 10px;
         height: 94vh;
 }
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid rgb(191, 176, 176);
+    margin-top: 20px;
+    background-color: rgb(246, 243, 243);
+    border-radius: 5px;
+}
+.per-info{
+    display: block;
+    line-height: 10px;
+    display: flex;
+    /* margin: 0px; */
+}
+.per-info h2{
+    margin: 0px;
+}
+.kg{
+    color: gray;
+    font-size: 10px;
+}
+
+.add-break h3{
+    margin: 20px 5px 8px 5px;
+    text-align: center;
+}
+.break{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+.break button{
+    padding: 12px;
+    border-radius: 30px;
+}
