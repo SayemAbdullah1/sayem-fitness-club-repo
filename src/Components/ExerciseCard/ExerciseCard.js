@@ -5,7 +5,7 @@ const ExerciseCard = ({exercise, addTotalTime}) => {
     const { name, picture, age, time, details } = exercise;
     // console.log(exercise.name)
     return (
-       <div>
+       <div className='cards'>
             <div className='exercise-card' data-aos="fade-up-right">
                 <img src={picture} alt="" />
                 <div className='cart-info'>

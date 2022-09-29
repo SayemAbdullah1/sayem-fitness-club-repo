@@ -15,11 +15,14 @@ const Exercise = () => {
         .then(data => setExercises(data))
     },[])
 
+    // add time==============
     const addTotalTime =(addTime)=>{
         const newTime = [...time, addTime]
         setTime(newTime)
         // console.log(newTime)
     }
+
+
 
     return (
         <div className='exercise-container'>

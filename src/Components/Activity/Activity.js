@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Activity.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Activity = ({time}) => {
+
+    const [breakTime, setBreakTime] = useState('')
     // console.log(time)
     let totalTimes = 0
 
@@ -11,10 +13,16 @@ const Activity = ({time}) => {
         totalTimes = totalTimes + addTime.time;
         // console.log(totalTimes)
     }
-
+// use toast-----------------
     const difToast = () =>{
         toast("Thank you!")
     }
+const addBreak = (e)=>{
+    const newBreak = breakTime[e.target.innerText];
+    // setBreakTime(newBreak)
+    console.log(newBreak)
+}
+
 
 
     return (
@@ -53,7 +61,7 @@ const Activity = ({time}) => {
             <h3>Add a break</h3>
             
             <div className='break'>
-                    <button>10<span>s</span></button>
+                    <button onClick={addBreak}>10<span>s</span></button>
                     <button>15<span>s</span></button>
                     <button>20<span>s</span></button>
                     <button>25<span>s</span></button>

@@ -13,3 +13,20 @@
 .activity img{
     width: 70px;
 }
+@media screen and (max-width: 688px) {
+    .exercise-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
+        direction: column;
+        padding: 0px 20px;
+        align-items: center;
+    }
+
+    .exercise {
+        grid-template-columns: repeat(1, 1fr);
+        /* align-items: center;
+        justify-content: center; */
+    }
+}

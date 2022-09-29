@@ -3,6 +3,7 @@
     width: 360px;
     margin-bottom: 30px;
     border-radius: 20px 20px 0px 0px;
+    column-gap: 100px;
     
 }
 .exercise-card img{
@@ -27,4 +28,19 @@
 }
 .add-btn:hover{
     background-color: rgb(240, 154, 154);
+}
+.cards{
+    flex-direction: column;
+}
+@media screen and (max-width: 480px) {
+    .exercise-card{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        overflow: hidden;
+        width: 100%;
+        direction: column;
+    }
+.exercise-card img{
+    width: 100%;
+}
 }

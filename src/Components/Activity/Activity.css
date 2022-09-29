@@ -16,6 +16,7 @@
         top: 0;
         padding: 20px 10px;
         height: 94vh;
+        /* width: 360px; */
 }
 .info{
     display: flex;
@@ -80,4 +81,11 @@
 }
 .tottal-time{
     padding-left: 100px;
+}
+@media screen and (max-width: 688px){
+    .activity-info{
+        width: 360px;
+        overflow: hidden;
+        width: 100%;
+    }
 }
