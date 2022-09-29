@@ -17,10 +17,10 @@ const Activity = ({time}) => {
     const difToast = () =>{
         toast("Thank you!")
     }
-const addBreak = (e)=>{
-    const newBreak = breakTime[e.target.innerText];
-    // setBreakTime(newBreak)
-    console.log(newBreak)
+    const handleBreakTime = (event)=>{
+        const breakTime = event.target.innerText;
+        setBreakTime(breakTime)
+        // console.log(newBreak)
 }
 
 
@@ -61,11 +61,11 @@ const addBreak = (e)=>{
             <h3>Add a break</h3>
             
             <div className='break'>
-                    <button onClick={addBreak}>10<span>s</span></button>
-                    <button>15<span>s</span></button>
-                    <button>20<span>s</span></button>
-                    <button>25<span>s</span></button>
-                    <button>30<span>s</span></button>
+                    <button onClick={(event) => handleBreakTime(event)}>10</button>
+                    <button onClick={(event) => handleBreakTime(event)}>15</button>
+                    <button onClick={(event) => handleBreakTime(event)}>20</button>
+                    <button onClick={(event) => handleBreakTime(event)}>25</button>
+                    <button onClick={(event) => handleBreakTime(event)}>30</button>
             </div>
         </div>
 
@@ -77,7 +77,7 @@ const addBreak = (e)=>{
                     <p>Exercise time <span className='tottal-time'>{totalTimes}</span><span className='kg'>s</span></p> 
             </div>
                 <div className='exercise-brk-time'>
-                    <p>Break time <span>s</span></p>
+                    <p>Break time <span className='sec'>{breakTime} s</span></p>
             </div>
         </div>
             <button className='btn-act' onClick={difToast}>Activity completed</button>

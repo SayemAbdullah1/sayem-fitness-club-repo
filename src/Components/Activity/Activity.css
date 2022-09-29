@@ -76,6 +76,9 @@
     border-radius: 10px;
 
 }
+.sec{
+    padding-left: 120px;
+}
 .btn-act:hover{
     background-color: white;
 }
