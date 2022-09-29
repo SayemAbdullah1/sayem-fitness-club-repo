@@ -37,7 +37,8 @@
 }
 .kg{
     color: gray;
-    font-size: 10px;
+    font-size: 15px;
+    /* font-style: bold; */
 }
 
 .add-break h3{
@@ -76,4 +77,7 @@
 }
 .btn-act:hover{
     background-color: white;
+}
+.tottal-time{
+    padding-left: 100px;
 }

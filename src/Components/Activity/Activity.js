@@ -1,8 +1,17 @@
 import React from 'react';
 import './Activity.css'
 
-const Activity = () => {
+const Activity = ({time}) => {
+    // console.log(time)
+    let totalTimes = 0
+
+    for(const addTime of time){
+        totalTimes = totalTimes + addTime.time;
+        // console.log(totalTimes)
+    }
+
     return (
+            // activity infooo......................................
 
         <div className='activity-info'>
             <div className='profile'>
@@ -50,10 +59,10 @@ const Activity = () => {
         <div>
             <h3>Exercise details</h3>
                 <div className='exercise-brk-time'>
-                    <p>Exercise time <span>00</span></p> 
+                    <p>Exercise time <span className='tottal-time'>{totalTimes}</span><span className='kg'>s</span></p> 
             </div>
                 <div className='exercise-brk-time'>
-                    <p>Break time <span>00</span></p>
+                    <p>Break time <span>s</span></p>
             </div>
         </div>
 

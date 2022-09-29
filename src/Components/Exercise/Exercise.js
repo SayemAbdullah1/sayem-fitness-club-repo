@@ -7,12 +7,19 @@ import './Exercise.css'
 const Exercise = () => {
 
     const [exercises, setExercises] = useState([])
+    const [time, setTime] = useState([])
 
     useEffect(()=>{
         fetch('db.json')
         .then(res => res.json())
         .then(data => setExercises(data))
     },[])
+
+    const addTotalTime =(addTime)=>{
+        const newTime = [...time, addTime]
+        setTime(newTime)
+        // console.log(newTime)
+    }
 
     return (
         <div className='exercise-container'>
@@ -22,14 +29,17 @@ const Exercise = () => {
                     exercises.map(exercise => <ExerciseCard
                         exercise = {exercise}
                         key = {exercise.id}
+                        addTotalTime={addTotalTime}
                     ></ExerciseCard>)
                 }
             </div>
                 <Blog></Blog>
             </div>
-            
+
             <div className='activity'>
-                <Activity></Activity>
+                <Activity
+                    time = {time}
+                ></Activity>
             </div>
         </div>
     );
